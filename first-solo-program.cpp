@@ -4,38 +4,41 @@
  //*  4) possible log export
 
 #include <iostream>
+#include <string>
 
 int main()
 {
-    initialization();
 
-    return 0;
-}
+    std::string username;
+    std::string password;
 
-void initialization()
-{
 
     std::cout << "Welcome to your all in one personal Smart Home appliance manager.\n";
     std::cout << "Please enter your login in credentials below.\n" << std::endl;
-    std::cout << "login/username\n" << std::endl;
-    std::cin login;
+    std::cout << "Username\n";
+    std::cin >> username;
 
-    mainMenu();
+    if (username == "wtf")
+    {
+        std::cout << "Password\n";
+        std::cin >> password;
+        if (password == "fuckoff")
+        {
+            std::cout << "You have successfully logged in with the following credentials:" << std::endl;
+            std::cout << "Username: " << username << std::endl;
+            std::cout << "Password: " << password << std::endl;
+        }
+        else
 
+            std::cout << "Your password is incorrect." << std::endl;
+    }
+    else
+        std::cout << "Your username is incorrect." << std::endl;
+            
+
+        return 0;
 }
 
-void mainMenu()
-{
-    using std::cout;
-    cout << "Main menu of available functions:\n";
-    cout << "1) Simple addition\n";
-    cout << "2) Simple subtraction\n";
-    cout << "3) Simple multiplication\n";
-    cout << "4) Simple division\n";
-    cout << "+) Advanced functions\n";
-    cout << "Press \"E\" for exit\n";
-
-}
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
