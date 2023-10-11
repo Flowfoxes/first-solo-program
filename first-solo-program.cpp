@@ -1,11 +1,13 @@
 // first-solo-program.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
+//* 1) log in 2) see menu with status ( on/off ) / see which devices are connected ( add, remove, edit) 3) diagnostics troubleshooting 
+ //*  4) possible log export
 
 #include <iostream>
 
 int main()
 {
-    std::cout << "Hello World!\n";
+   
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
