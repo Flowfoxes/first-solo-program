@@ -7,6 +7,9 @@
 #include <string>
 
 void userlogin();
+void userMenu();
+void mainSwitchLoop();
+void wtf();
 
 int main()
 {
@@ -29,10 +32,12 @@ void userlogin()
         std::cout << "Password\n";
         std::cin >> password;
         if (password == "fuckoff")
-        {
-            std::cout << "You have successfully logged in with the following credentials:" << std::endl;
-            std::cout << "Username: " << username << std::endl;
-            std::cout << "Password: " << password << std::endl;
+        {   
+            system("cls");
+            std::cout << "You have successfully logged in :" << std::endl;
+            
+            userMenu();
+           
         }
         else
 
@@ -43,11 +48,40 @@ void userlogin()
 
 }
 
-void usermenu()
+void userMenu()
 {
+
+    std::cout << "\nWelcome to the Smart Home Appliance Main menu.\n\n";
+    std::cout << "Please make a selection below.\n";
+    std::cout << "1) Active devices\n";
+    std::cout << "2) Edit Devices\n";
+    std::cout << "3) Remove devices\n";
+    std::cout << "4) Reset all\n";
+    std::cout << "5) Exit\n";
+
+    mainSwitchLoop();
 
 }
 
+void mainSwitchLoop()
+{
+    std::cout << "Select from menu: ";
+    char option;
+    while (std::cin.get(option)) {
+        std::cin.get();
+        switch (option) {
+       // case '1': activeDevices(); break;
+       // case '2': editDevices(); break;
+        //case '3': removeDevices(); break;
+       // case '4': resetAll(); break;
+        //case '5': exitMenu(EXIT_SUCCESS); break;
+
+        }
+    }
+}
+void wtf()
+{
+}
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
