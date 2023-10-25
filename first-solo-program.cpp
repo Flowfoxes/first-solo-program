@@ -6,7 +6,13 @@
 #include <iostream>
 #include <string>
 
+void userlogin();
+
 int main()
+{
+    userlogin();
+}
+void userlogin()
 {
 
     std::string username;
@@ -34,9 +40,12 @@ int main()
     }
     else
         std::cout << "Your username is incorrect." << std::endl;
-            
 
-        return 0;
+}
+
+void usermenu()
+{
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
