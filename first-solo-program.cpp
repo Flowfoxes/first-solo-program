@@ -13,7 +13,26 @@ void wtf();
 
 int main()
 {
-    userlogin();
+   // userlogin();
+
+    struct Devices 
+    {
+        int deviceNumber;
+        int deviceValue;
+
+    };
+
+    Devices Device1 =
+    {
+        Device1.deviceNumber = 1,
+        Device1.deviceValue = 3000
+
+    };
+
+    std::cout << Device1.deviceValue << std::endl;
+    std::cout << Device1.deviceNumber << std::endl;
+
+
 }
 void userlogin()
 {
@@ -51,8 +70,8 @@ void userlogin()
 void userMenu()
 {
 
-    std::cout << "\nWelcome to the Smart Home Appliance Main menu.\n\n";
-    std::cout << "Please make a selection below.\n";
+    std::cout << "\nWelcome to the Smart Home Appliance Main menu!\n\n";
+    std::cout << "Please make a selection below.\n\n";
     std::cout << "1) Active devices\n";
     std::cout << "2) Edit Devices\n";
     std::cout << "3) Remove devices\n";
