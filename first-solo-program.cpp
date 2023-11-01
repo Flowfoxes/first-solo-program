@@ -9,11 +9,15 @@
 void userlogin();
 void userMenu();
 void mainSwitchLoop();
-void wtf();
+void activeDevices();
+void editDevices();
+void removeDevices();
+void resetAll();
+void exitMenu();
 
 int main()
 {
-   // userlogin();
+    userlogin();
 
     struct Devices 
     {
@@ -89,17 +93,34 @@ void mainSwitchLoop()
     while (std::cin.get(option)) {
         std::cin.get();
         switch (option) {
-       // case '1': activeDevices(); break;
-       // case '2': editDevices(); break;
-        //case '3': removeDevices(); break;
-       // case '4': resetAll(); break;
-        //case '5': exitMenu(EXIT_SUCCESS); break;
+          case '1': activeDevices(); break;
+          case '2': editDevices(); break;
+          case '3': removeDevices(); break;
+          case '4': resetAll(); break;
+          case '5': exitMenu(); break;
 
         }
     }
 }
-void wtf()
+void activeDevices()
 {
+
+}
+void editDevices()
+{
+
+}
+void removeDevices()
+{
+
+}
+void resetAll()
+{
+
+}
+void exitMenu()
+{
+
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
