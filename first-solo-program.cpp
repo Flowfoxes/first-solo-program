@@ -17,7 +17,6 @@ void exitMenu();
 
 int main()
 {
-    userlogin();
 
     struct Devices 
     {
@@ -33,9 +32,7 @@ int main()
 
     };
 
-    std::cout << Device1.deviceValue << std::endl;
-    std::cout << Device1.deviceNumber << std::endl;
-
+    userlogin();
 
 }
 void userlogin()
@@ -98,7 +95,7 @@ void mainSwitchLoop()
           case '3': removeDevices(); break;
           case '4': resetAll(); break;
           case '5': exitMenu(); break;
-
+          default: break;
         }
     }
 }
